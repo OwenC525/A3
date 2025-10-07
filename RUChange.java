@@ -36,16 +36,17 @@ public class RUChange {
         if (centsDue < 0){
             System.out.println("Invalid input!");
         }
+        else {
+            quarters = (centsDue / 25);
+            dimes = ((centsDue % 25) / 10);
+            nickels = ((centsDue % 25 % 10) / 5);
+            pennies = ((centsDue % 25 % 10 % 5) / 1);
 
-        quarters = (centsDue / 25);
-        dimes = ((centsDue % 25) / 10);
-        nickels = ((centsDue % 10) / 5);
-        pennies = ((centsDue % 5) / 1);
-
-        System.out.println("Quarters: " + quarters);
-        System.out.println("Dimes: " + dimes);
-        System.out.println("Nickels: " + nickels);
-        System.out.println("Pennies: "+ pennies);
+            System.out.println("Quarters: " + quarters);
+            System.out.println("Dimes: " + dimes);
+            System.out.println("Nickels: " + nickels);
+            System.out.println("Pennies: "+ pennies);
+        }
 
 
     }
