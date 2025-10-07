@@ -24,17 +24,17 @@ public class Hopscotch {
 
         for (int i = 1; i <= given; i = i + 3) {
             center = i;
-            System.out.println(center);
+            System.out.print(center + " ");
         }
 
         for (int i = 2; i <= given; i = i + 3) {
             left = i;
-            System.out.println(left);
+            System.out.print(left + " ");
         }
 
         for (int i = 3; i <= given; i = i + 3) {
             right = i;
-            System.out.println(right);
+            System.out.print(right + " ");
         }
 
     }
