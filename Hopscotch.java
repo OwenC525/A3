@@ -15,7 +15,28 @@ public class Hopscotch {
        size: The size of the hopscotch path(the total number of rectangles)
      */
     public static void main(String[] args) {
-        //WRITE YOUR CODE HERE
+
+        int given = Integer.parseInt(args[0]);
+
+        int center = 0;
+        int left = 0;
+        int right = 0;
+
+        for (int i = 1; i <= given; i = i + 3) {
+            center = i;
+            System.out.println(center);
+        }
+
+        for (int i = 2; i <= given; i = i + 3) {
+            left = i;
+            System.out.println(left);
+        }
+
+        for (int i = 3; i <= given; i = i + 3) {
+            right = i;
+            System.out.println(right);
+        }
+
     }
 
 }
